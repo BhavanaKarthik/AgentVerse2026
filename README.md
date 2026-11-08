@@ -1,16 +1,12 @@
-Here is the cleaned-up and properly formatted version of your README. I've fixed the missing heading hierarchies, formatted the hotkeys and quickstart steps into clean lists, structured the ethics and safety section, and cleaned up whitespace in the architecture diagram.
 
----
 
-# 🐾 IsaacSpot Fleet: Perception-Driven Edge Litter Collection & Hazard Quarantine
+ 🐾 IsaacSpot Fleet: Perception-Driven Edge Litter Collection & Hazard Quarantine
 
 > **AgentVerse 2026 Hackathon @ UCL**
 > **Track:** Embodied AI & Autonomous Systems / Robotics
 > **Platform:** NVIDIA Isaac Sim 4.x + Dual Edge AI (PaliGemma-3B & Gemma-2-2B-IT)
 
 An autonomous multi-agent fleet simulation featuring **5 Boston Dynamics Spot quadruped robots** collaborating to clean, classify, and isolate hazardous waste across a 44m × 44m public park environment.
-
----
 
 ## 🎯 Rubric Alignment
 
@@ -46,8 +42,6 @@ An autonomous multi-agent fleet simulation featuring **5 Boston Dynamics Spot qu
     • String-Pulled A* Obstacle Avoidance & Visual Servoing
 
 ```
-
----
 
 ## 🚦 Interactive Hotkeys (Isaac Sim)
 
