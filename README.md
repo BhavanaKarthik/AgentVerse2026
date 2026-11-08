@@ -1,6 +1,6 @@
 
 
- 🐾 IsaacSpot Fleet: Perception-Driven Edge Litter Collection & Hazard Quarantine
+ 🐾 EcoSwarm: Autonomous Quadruped Swarm for Litter Collection & Hazard Quarantine
 
 > **AgentVerse 2026 Hackathon @ UCL**
 > **Track:** Embodied AI & Autonomous Systems / Robotics
