@@ -40,3 +40,29 @@ An autonomous multi-agent fleet simulation featuring **5 Boston Dynamics Spot qu
     • Hysteresis-Stabilized Hungarian Target Matching
     • Multi-Hazard Prioritization (Lithium Battery Isolation)
     • String-Pulled A* Obstacle Avoidance & Visual Servoing
+
+🚦 Interactive Hotkeys (Isaac Sim)
+When running inside the Isaac Sim viewport, use the following keys to demonstrate dynamic adaptation:
+[P] — Toggle Fleet Mode: Autonomous Clean-up vs. Hold / Idle.
+[C] — Trigger Mid-Sequence Scene Perturbation: Displaces an active target or crosses a pedestrian into a robot's corridor, showing live A* trajectory re-planning.
+[F] — Inject Critical Failure Mode: Simulates an end-effector grasp slip and flags a thermal-risk battery cell for isolated hazmat handling.
+[R] — Reset Fleet: Resets all 5 Spot quadrupeds to their charging pads.
+⚖️ Ethics, Safety & Responsible AI
+Pedestrian Safety Halo:
+Under nominal operations, robots enforce an active collision envelope of 2.85m.
+Upon identifying an incendiary or thermal hazard (e.g., punctured battery cells), the safety envelope expands to 4.10m, and the robot’s roof beacon switches to high-visibility amber.
+Uncertainty-Aware Caution (No Blind Grasping):
+If ambient lighting, occlusion, or viewing distance drops VLM classification confidence below 78%, the robot does not guess.
+It transitions to UNCERTAINTY_ORBIT_REINSPECT, repositioning 42° to inspect from an alternate viewpoint before interacting.
+Privacy by Design:
+Onboard camera streams run entirely on simulated local edge hardware. No human facial data or identifying park imagery is transmitted to cloud APIs.
+🚀 Quickstart Guide
+Prerequisites
+NVIDIA Omniverse / Isaac Sim 4.0+
+Python 3.10+
+Optional: CUDA-compatible GPU (RTX 3080 / 4080 or better recommended for local transformers inference)
+Running in Isaac Sim
+Launch NVIDIA Isaac Sim.
+Open the script console via Window -> Script Editor.
+Paste the contents of scripts/run_simulation.py or load the file.
+Click Run (Ctrl+Enter), then press Play on the left toolbar.
