@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python67
 """
 ================================================================================
 NVIDIA ISAAC SIM — AUTONOMOUS LITTER-COLLECTION ROBOT ("SPOT") VERSION 7.0
