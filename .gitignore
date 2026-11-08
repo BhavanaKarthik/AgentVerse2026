@@ -1,0 +1,34 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+env/
+venv/
+.venv/
+
+# Secrets and environment configs
+.env
+.env.*
+*.pem
+*.key
+hf_token*
+*token*
+
+# Model weights and cache
+.cache/
+huggingface/
+checkpoints/
+*.bin
+*.safetensors
+*.pt
+*.pth
+
+# Isaac Sim and Omniverse logs
+*.log
+omniverse/
+*.usd_backup
+.vscode/
+.idea/
